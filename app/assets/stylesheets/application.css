@@ -10,6 +10,180 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+ *= require_tree
  *= require_self
+ *= require fancybox
  */
+ /*
+.navbar .navbar-nav > li {
+	display:inline;
+	position:relative;
+	display:block;
+	float:left;
+	vertical-align: top;
+
+	font-size: 1.8em;
+	width: 150px;
+	padding-left: 100px;
+
+} 
+
+*/
+
+
+/*
+.photo-box {
+	margin-top:10px;
+	border: #cdcdcd medium solid;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+*/
+
+.body {
+    margin-bottom: 1000px;
+    background-color: aqua !important;
+}
+
+.navbar-username {
+	 color: white;
+	 font-size: 20px;
+	 text-align: left;
+	 margin-bottom: 5px;
+}
+
+
+
+
+.photo-box {
+	padding: 12px;
+	width: 235px;
+	height:235px;
+	box-shadow: 8px 8px 10px #aaa;
+	border: 5px solid #b3ffb3;
+	border-radius: 20%; 
+	display:block;
+	margin:auto;
+	
+}
+
+.ins-form {
+	margin-left:100px;
+
+}
+
+
+.photo-container {
+	height: 1000px;
+	background-color: red;
+}
+
+
+.registration-section {
+	height: 1000px;
+	background-image: url('signup.jpg');
+	-moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.new-post-board {
+	height: 1000px;
+}
+
+.signin-section {
+	height:1000px;
+	background-image: url('signin.jpg');
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.page-display-area {
+	border: 5px solid white;
+	width: 1000px;
+	border-radius: 1px;
+	box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
+	margin-top: 100px;
+	margin-bottom:500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.single-photo-slide {
+	text-align: center;
+	height:600px;
+}
+
+
+.simple_form div.input {
+	margin-left: 50px;
+ 	margin-bottom: 100px;
+ 	width: 50%;
+ 	clear: both; /* Required for Webkit, but not for Gecko */
+}
+
+.simple_form label {
+	color:black;
+	float: left;
+	width: 600px;
+ 	text-align: left;
+ 	font-size:20px;
+	margin: 2px 20px;
+}
+
+div.boolean, .simple_form input[type='submit'] {
+	color:grey;
+  margin-left: 20px;
+}
+
+div.boolean label, label.collection_radio_buttons {
+  float: none;
+  margin: 0;
+}
+
+label.collection_radio_buttons {
+  margin-right: 10px;
+  vertical-align: -2px;
+  margin-left: 2px;
+}
+
+.field_with_errors {
+  background-color: #ff3333;
+}
+
+.simple_form .error {
+  clear: left;
+  color: black;
+  display: block;
+  margin-left: 120px;
+}
+
+.simple_form .hint {
+  clear: left;
+  margin-left: 120px;
+  color: #555;
+  display: block;
+  font-style: italic;
+}
+
+input.radio {
+  margin-right: 5px;
+  vertical-align: -3px;
+}
+
+input.check_boxes {
+  margin-left: 3px;
+  vertical-align: -3px;
+}
+
+label.collection_check_boxes {
+  float: none;
+  margin: 0;
+  vertical-align: -2px;
+  margin-left: 2px;
+}

@@ -1,0 +1,24 @@
+<div id="photo-container" class="container-fluid">
+
+<div class="photo-board">
+
+<% @photoposts.each_with_index do |photopost, index| %>
+	<% if (index%3==0) %>
+	<div class="row">
+	<% end %>
+
+    <div class="col-xs-3">	
+    	<div class="photo-box">
+
+			<%=link_to image_tag(photopost.image.url(:small)), photopost_path(photopost), :popup=>['original_image', 'height=700,width=900'] %>
+		</div>
+	</div>
+
+	<% if (index%3==2) %>
+	</div>
+	<% end %>
+<% end %>
+
+</div>
+
+</div>

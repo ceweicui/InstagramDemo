@@ -1,0 +1,12 @@
+<div id="main-container" class="container-fluid">
+
+<%= image_tag @photopost.image.url(:meidum) %>
+
+<%= simple_form_for @photopost, :url => photopost_path(@photopost), :method => :patch do |f| %>
+	<%= f.input :_method, :as => :hidden, :input_html => {:value=>"patch"} %>
+ 	<%= f.input :image %>
+  	<%= f.input :caption %>
+  	<%= f.button :submit %>
+<% end %>
+
+</div>

@@ -1,0 +1,19 @@
+<div class="new-post-board">
+  <div class=ins-form>
+    <h3> Upload an image </h3>
+      <%= simple_form_for(@photopost, html: { class: 'form-inline' }) do |f| %>
+        <div class="row">
+          <div class="col-xs-8">
+            <%= f.input :image %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8">
+            <%= f.input :caption %>
+          </div>
+        </div>
+        <%= f.button :submit %>
+      <% end %>
+  </div>
+<%= flash[:message] %>
+</div>
