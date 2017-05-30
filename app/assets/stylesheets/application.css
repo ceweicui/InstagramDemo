@@ -54,7 +54,10 @@
 }
 
 
-
+.alertnotice {
+	font-size: 15pt;
+	height: 20px;
+}
 
 .photo-box {
 	padding: 12px;
