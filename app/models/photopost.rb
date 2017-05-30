@@ -1,0 +1,2 @@
+class Photopost < ApplicationRecord
+end
